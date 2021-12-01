@@ -1,0 +1,1245 @@
+
+  
+    
+      uid=SBC,o=LTER,dc=ecoinformatics,dc=org
+      all
+    
+    
+      uid=lkui,o=LTER,dc=ecoinformatics,dc=org
+      all
+    
+    
+      public
+      read
+    
+  
+  
+    doi:10.6073/pasta/08d9260f81d1fa492cc9d02a6481a2f3
+    Benchmark water samples pH for field calibration
+    SBC LTER: pH time series: Water-sample pH and CO2 system chemistry, ongoing since 2011
+    
+      Santa Barbara Coastal LTER
+      			Marine Science Institute University of California
+			Santa Barbara, CA 93106  USA
+      sbclter@msi.ucsb.edu
+    
+    
+      Gretchen E Hofmann
+      			Department of Ecology, Evolution and Marine Biology University of California
+			Santa Barbara, CA 93106-9620  US
+      805-893-6175
+      hofmann@lifesci.ucsb.edu
+      https://orcid.org/0000-0003-0931-1238
+    
+    
+      Carol A Blanchette
+      			Marine Science Institute University of California
+			Santa Barbara, CA 93106-6150  USA
+      blanchet@lifesci.ucsb.edu
+    
+    
+      Uta Passow
+      			Marine Science Institute University of California
+			Santa Barbara, CA 93106-6150  USA
+      uta.passow@lifesci.ucsb.edu
+      https://orcid.org/0000-0002-2296-6936
+    
+    
+      Libe Washburn
+      			Marine Science Institute University of California
+			Santa Barbara, CA 93106-6150  US
+      805-893-7367
+      washburn@eri.ucsb.edu
+      https://orcid.org/0000-0002-8728-4768
+    
+    
+      Jay Lunden
+      			Marine Science Institute University of California
+			Santa Barbara, CA 96106-6150  
+    
+    
+      Emily Rivest
+      			Bodega Marine Laboratory University of California
+			Davis, CA   US
+      ebrivest@ucdavis.edu
+    
+    
+      Lydia Kapsenberg
+      			Marine Science Institute University of California
+			Santa Barbara, CA 93106  US
+      lydia.kapsenberg@lifesci.ucsb.edu
+    
+    
+      Li Kui
+      UCSB
+      			Marine Science Institute University of California
+			Santa Barbara, CA 93106-6150  US
+      lkui@ucsb.edu
+      https://orcid.org/0000-0002-5894-4907
+    
+    2018-08-17
+    English
+    
+      
+  Data are a time-series of pH and carbonate chemistry in
+  manually-collected sea water samples from sixteen near-shore locations
+  and 20 locations along the Santa Barbara Channel, California, USA, and
+  intended to benchmark data from moored pH instruments. Data collection
+  began in June 2011 and is ongoing. Time-series for pH sensors deployed
+  in the field (e.g., SeaFET) are available elsewhere.
+
+      
+  Discrete seawater samples were collected by hand or using a Niskin
+  bottle. In the laboratory, samples were analyzed for pH (total scale)
+  and total alkalinity. Two parameters were used to calculate the full
+  suite of carbonate chemistry parameters using the CO2calc algorithms.
+  Program outputs are included for laboratory conditions as input, and
+  adjusted for situ temperature. See Methods for more information, e.g.,
+  Lunden, et al.
+
+      
+  Data were collected by a consortium of research groups with the intent
+  to leverage their collective assets and expertise. These groups (and
+  sponsors) include Santa Barbara Coastal LTER (NSF), OMEGAS Project
+  (NSF), Passow Lab (Calif. State Water Board), Hofmann Lab (NSF, CINMS,
+  US NPS).
+
+    
+    
+      acidity
+      alkalinity
+      carbon dioxide
+      dissolved inorganic carbon
+      LTER
+      pH
+      Santa Barbara Coastal
+      LTER Controlled Vocabulary v1
+    
+    
+      carbonate chemistry
+      OMEGAS
+      SBC-LTER Controlled Vocabulary
+    
+    
+      Alegria
+      Arroyo Quemado
+      Cambria
+      Coal Oil Point
+      Lompoc Landing
+      Mohawk
+      Purissima
+      Razors
+      Stearns Wharf
+      Santa Barbara Coastal LTER Places
+    
+    
+      acidity
+      alkalinity
+      NBII Biocomplexity
+    
+    
+      LTER
+      none
+    
+    
+      
+  This data package is released under the Creative Commons License
+  Attribution 4.0 International (CC BY 4.0, see
+  https://creativecommons.org/licenses/by/4.0/). This license states
+  that consumers ("Data Users" herein) may distribute, adapt,
+  reuse, remix, and build upon this work, as long as they give
+  appropriate credit, provide a link to the license, and indicate if
+  changes were made. If redistributed, a Data User may not apply
+  additional restrictions or technological measures that prevent access.
+
+      
+  The Data User has an ethical obligation to cite the data source
+  appropriately in any publication or product that results from its use,
+  and notify the data contact or creator. Communication, collaboration,
+  or co-authorship (as appropriate) with the creators of this data
+  package is encouraged to prevent duplicate research or publication.
+  The Data User is urged to contact the authors of these data if any
+  questions about methodology or results occur. The Data User should
+  realize that these data may be actively used by others for ongoing
+  research and that coordination may be necessary to prevent duplication
+  or inappropriate use. The Data User should realize that
+  misinterpretation may occur if data are used outside of the context of
+  the original study. The Data User should be aware that data are
+  updated periodically and it is the responsibility of the Data User to
+  check for new versions of the data.
+
+      
+  While substantial efforts are made to ensure the accuracy of data and
+  associated documentation, complete accuracy of data sets cannot be
+  guaranteed. This data package (with its components) is made available
+  “as is” and with no warranty of accuracy or fitness for use. The
+  creators of this data package and the repository where these data were
+  obtained shall not be liable for any damages resulting from
+  misinterpretation, use or misuse of the data package or its
+  components.
+
+    
+    
+      
+        http://sbc.lternet.edu/
+      
+    
+    
+      
+        Rancho Marino: Rancho Marino (RMC) is in the rocky intertidal area near Cambria, CA. It is is part of the Univeristy of California Natural Reserve System
+        
+          -121.0928466
+          -121.0928466
+          35.54030478
+          35.54030478
+        
+      
+      
+        Purisima Point: Purisima (PUR) is located pproximately 3.5 km SSE of Purisima Point, California, USA, in rocky habitat 15 meters below Mean Sea Level (MSL).
+        
+          -120.6276
+          -120.6276
+          34.72602
+          34.72602
+        
+      
+      
+        Lompoc Landing: Lompoc Landing (LOL) is a rocky intertidal site located on the Vandenberg Air Force Base (VAFB) and is just north of Surf Beach
+        
+          -120.6087994
+          -120.6087994
+          34.71905679
+          34.71905679
+        
+      
+      
+        Razors: Razors (RZR) is in the rocky intertidal near Alegria Beach, located on the Hollister Ranch, between Gaviota and Point Conception
+        
+          -120.278178
+          -120.278178
+          34.46713695
+          34.46713695
+        
+      
+      
+        ALE: Alegria (ALE) is located offshore from the community of Hollister Ranch, between Gaviota and Pt. Conception. Depth: 15 meters.
+        
+          -120.28998
+          -120.28998
+          34.46085
+          34.46085
+        
+      
+      
+        ARQ: Arroyo Quemado Reef (ARQ) is located 0.16km from river mouth; estimated depth is 35 feet. This site (ARQ) is about 200m to the SE of a previously sampled site, AQM.
+        
+          -120.11965
+          -120.11965
+          34.46495
+          34.46495
+        
+      
+      
+        Coal Oil Point: Coal Oil Point (COP) is located in the rocky intertidal area on the western edge of the University of California, Santa Barbara (UCSB) campus, and is part of the UC Natural Reserve System
+        
+          -119.8782861
+          -119.8782861
+          34.40685962
+          34.40685962
+        
+      
+      
+        MKO: MKO is located at Mohawk reef, at the offshore spar buoy. Depth is 10.8 meters.
+        
+          -119.73012
+          -119.73012
+          34.39323
+          34.39323
+        
+      
+      
+        Stearns Wharf, Santa Barbara CA: Stearns Wharf, Santa Barbara CA
+        
+          -119.68493
+          -119.68493
+          34.40934
+          34.40934
+        
+      
+      
+        
+          
+            2011-06-07
+          
+          
+            2019-06-25
+          
+        
+      
+    
+    
+      Information Manager, Santa Barbara Coastal LTER
+      			Marine Science Institute
+			University of California
+			Santa Barbara, California 93106-6150  United States
+      805 893 2071
+      sbclter@msi.ucsb.edu
+      https://sbclter.msi.ucsb.edu/
+    
+    
+      Santa Barbara Coastal Long Term Ecological Research
+        Project
+    
+    
+      
+        
+          
+            
+    For subtidal sites, discrete bottles samples were collected by a
+    SCUBA diver using a Niskin bottle, firing it manually. For
+    intertidal sites, discrete bottle samples were collected in a
+    bottle, manually. These data are intended to be benchmark samples
+    for continuously recording pH sensors (e.g., SeaFET), and so water
+    samples were collected as close to the pH sensor as possible and
+    approximately in concurrence with the sensor's voltage measurement.
+    Water samples were poisoned with saturated mercuric chloride
+    immediately after collection (following SOP1, Dickson et al. 2007),
+    sealed, and stored in a cool, dark place until the seawater was
+    analyzed.
+  
+            
+    Salinity, pH, and total alkalinity in the water samples were
+    measured in the laboratory. Salinity was measured using a benchtop
+    conductivity meter (YSI 3100). Seawater pH was measured using a
+    spectrophotometric method with indicator dye, unpurified m-cresol
+    purple (Sigma-Aldrich, SOP 6b, Dickson et al. 2007). Total
+    alkalinity (TA) was measured using an automated, open-cell
+    potentiometric titration (SOP 3b, Dickson et al. 2007) with a
+    Mettler-Toledo T50 titrator and a DG115-SC pH probe
+    (Mettler-Toledo). The probe was calibrated using a Tris buffer (A.
+    Dickson Laboratory, Scripps Institution of Oceanography). Titrations
+    were performed using certified acid titrant (~0.1M HCl, 0.6 M NaCl;
+    A. Dickson Laboratory, Scripps Institution of Oceanography).
+    Certified reference materials (CRMs) from A. Dickson Laboratory,
+    Scripps Institution of Oceanography, were used to determine the
+    accuracy and precision of the titrations daily before experimental
+    samples were measured. Analyzed CRMs were accurate within 10
+    micromole kg-1. pH at 25°C, AT,
+    temperature, and salinity were used to calculate the pH and
+    pCO2 of the treatments using CO2calc (Robbins
+    et al. 2010), with CO­2 constants K1, K2 from
+    Millero et al. (2006), and pH expressed on the total scale (mol
+    kg-SW-1).
+  
+            
+    The CO2calc calculation is programmed in R using package “seacarb”
+    and function “carb”.
+  
+            
+    References:
+  
+            
+    Robbins, L.L., Hansen, M.E., Kleypas, J.A., and Meylan, S.C., 2010,
+    CO2calc: A user-friendly seawater carbon calculator for Windows, Max
+    OS X, and iOS (iPhone): U.S. Geological Survey Open-File Report
+    2010-1280, 17 pp.
+    http://sbc.lternet.edu/external/Ocean/Protocols/USGS_CO2calc_manual_Open_File_Report_2010_1280.pdf
+  
+            
+    Rivest, E. B., M. C. O'Brien, L. Kapsenberg, C. Gotschalk, C. A.
+    Blanchette, U. Hoshijima and G. E. Hofmann. 2016. Beyond the
+    benchtop and the benthos: dataset management planning and design for
+    time series of ocean carbonate chemistry associated with
+    Durafet®-based pH sensors. Ecological Informatics, 36: 209-220.
+    https://doi.org/10.1016/j.ecoinf.2016.08.005
+  
+            
+    Dickson, A.G., C.L. Sabine, and J.R. Christian (Eds.). 2007. Guide
+    to Best Practices for Ocean CO2 Measurements, PICES Spec. ed.
+    http://sbc.lternet.edu/external/Ocean/Protocols/Guide_for_Ocean_co2_measurements.pdf
+  
+          
+        
+        
+          SBC LTER Protocol: Collection and processing of benchmark water samples for DuraFET type pH sensors
+          
+             Hofmann
+          
+          
+            
+              https://sbclter.msi.ucsb.edu/external/Ocean/Protocols/Hofmann_etal_2014-10-21_durafet_benchmark_samples.pdf
+            
+          
+        
+      
+    
+    
+      Santa Barbara Coastal Long Term Ecological Research Project
+      
+        Dr. Robert Miller
+        			Marine Science Institute
+			University of California
+			Santa Barbara, California 93106-6150  United States
+        805 893 6174
+        miller@msi.ucsb.edu
+        Principal Investigator
+      
+      
+        Dr. Dan Reed
+        			Marine Science Institute
+			University of California
+			Santa Barbara, California 93106-6150  United States
+        805 893 8363
+        dan.reed@lifesci.ucsb.edu
+        Co-principal Investigator
+      
+      
+        Dr. Adrian Stier
+        			Department of Ecology, Evolution and Marine Biology
+			University of California
+			Santa Barbara, California 93106-9260  United States
+        805 893 5467
+        adrian.stier@lifesci.ucsb.edu
+        Co-principal Investigator
+      
+      
+        Dr. Gretchen Hoffman
+        			Department of Ecology, Evolution and Marine Biology
+			University of California
+			Santa Barbara, California 93106-9620  United States
+        805 893 6175
+        hofmann@lifesci.ucsb.edu
+        Co-principal Investigator
+      
+      
+        Dr. David Siegel
+        			Institute for Computational Earth System Science
+			University of California
+			Santa Barbara, California 93106-3060  United States
+        805 893 4547
+        davey@icess.ucsb.edu
+        Co-principal Investigator
+      
+      
+        
+          The primary research objective of the Santa Barbara Coastal LTER is to investigate
+            the importance of land and ocean processes in structuring giant kelp
+              (Macrocystis pyrifera ) forest ecosystems. As in many temperate
+            regions, the shallow rocky reefs in the Santa Barbara Channel, California, are dominated
+            by giant kelp forests. Because of their close proximity to shore, kelp forests are
+            influenced by physical and biological processes occurring on land as well as in the open
+            ocean. SBC LTER research focuses on measuring and modeling the patterns, transport, and
+            processing of material constituents (e.g., nutrients, carbon, sediment, organisms, and
+            pollutants) from terrestrial watersheds and the coastal ocean to these reefs.
+            Specifically, we are examining the effects of these material inputs on the primary
+            production of kelp, and the population dynamics, community structure, and trophic
+            interactions of kelp forest ecosystems.
+        
+      
+      
+        
+          NSF Award OCE-9982105, OCE-0620276, OCE-1232779, OCE-1831937
+        
+      
+    
+    
+      water sample pH and CO2calc output
+      measured pH, alkalinity (or total CO2) from water samples with carbonate system parameters calculated by CO2calc for both laboratory (input) and in situ (adjusted) conditions
+      
+        SBCLTER_pH_water_samples_20200817.csv
+        177078
+        1b6d19fdd8b71e05b38650071d038bbd
+        
+          
+            1
+            \r\n
+            column
+            
+              ,
+              no
+              "
+            
+          
+        
+        
+          
+            https://pasta.lternet.edu/package/data/eml/knb-lter-sbc/75/4/be7216be6ab9100663d4d84a7211d40d
+          
+        
+      
+      
+        
+          site
+          Site code
+          Site code of sample
+          string
+          
+            
+              
+                
+                  
+                    ALC
+                    Landing Cover
+                  
+                  
+                    ALE
+                    Aelgria
+                  
+                  
+                    AQI
+                    Arroyo Quemado Inshore
+                  
+                  
+                    ARQ
+                    Arroyo Quemado
+                  
+                  
+                    COP
+                    Coal Oil Point
+                  
+                  
+                    IML
+                    IML
+                  
+                  
+                    INN
+                    INN
+                  
+                  
+                    LOL
+                    Lompoc Landing
+                  
+                  
+                    LOP
+                    LOP
+                  
+                  
+                    MKO
+                    Mohawk Reef
+                  
+                  
+                    NCY
+                    NCY
+                  
+                  
+                    PRZ
+                    Prisoners Harbor
+                  
+                  
+                    PUR
+                    Purisima Pt
+                  
+                  
+                    RMC
+                    Rancho Marino (Cambria)
+                  
+                  
+                    RZR
+                    Razors
+                  
+                  
+                    SBH
+                    Santa Barbara Harbor (Stearns Wharf)
+                  
+                  
+                    SMN
+                    San Miguel Is. North
+                  
+                
+              
+            
+          
+        
+        
+          datetime
+          Time stamp (UTC)
+          Date and time sample was collected in ISO format (UTC)
+          date
+          
+            
+              YYYY-MM-DD hh:mm:ss
+              1 minute
+              
+            
+          
+        
+        
+          latitude_degN
+          Latitude (degree)
+          Latitude of site in decimal degrees
+          float
+          
+            
+              
+                degree
+              
+              1e-04
+              
+                real
+              
+            
+          
+          
+            -9999
+            no data, value not measured
+          
+        
+        
+          longitude_degW
+          Longitude (degree)
+          Longitude of site in decimal degrees, West is negative
+          float
+          
+            
+              
+                degree
+              
+              1e-04
+              
+                real
+              
+            
+          
+          
+            -9999
+            no data, value not measured
+          
+        
+        
+          temp_lab
+          Temperature (C)
+          Water temperature when pH was measured, measured with benchtop CT instrument (CO2calc input)
+          float
+          
+            
+              
+                celsius
+              
+              0.01
+              
+                real
+              
+            
+          
+          
+            -9999
+            no data, value not measured
+          
+        
+        
+          pH_lab
+          pH, measured (see pH scale)
+          pH (measured), on scale given in column named pH Scale (CO2calc input)
+          float
+          
+            
+              
+                dimensionless
+              
+              0.01
+              
+                real
+              
+            
+          
+          
+            -9999
+            no data, value not measured
+          
+        
+        
+          TA_lab
+          TA, measured (micromole/kgSW)
+          Total alkalinity (measured), micromole per kilogram seawater  (CO2calc input)
+          float
+          
+            
+              
+                micromolePerKilogram
+              
+              0.01
+              
+                real
+              
+            
+          
+          
+            -9999
+            no data, value not measured
+          
+        
+        
+          salinity_lab
+          Salinity (PPT)
+          Salinity measured with benchtop CT instrument (CO2calc input)
+          float
+          
+            
+              
+                partsPerThousand
+              
+              0.01
+              
+                real
+              
+            
+          
+          
+            -9999
+            no data, value not measured
+          
+        
+        
+          totalPt
+          Total P (micromole/kgSW)
+          Concentration of phosphorus (CO2calc input, optional), micromole per kilogram seawater. Data that are unavailable are set to zero
+          float
+          
+            
+              
+                micromolePerKilogram
+              
+              0.01
+              
+                real
+              
+            
+          
+          
+            0
+            no data, value not measured
+          
+        
+        
+          totalSi
+          Total Si (micromole/kgSW)
+          Concentration of silicate  (CO2calc input, optional) in micromole per kilogram seawater. Data that are unavailable are set to zero
+          float
+          
+            
+              
+                micromolePerKilogram
+              
+              0.01
+              
+                real
+              
+            
+          
+          
+            0
+            no data, value not measured
+          
+        
+        
+          P
+          Pressure (dbars)
+          Water pressure in decibars, for near-surface, set to zero (CO2calc input)
+          float
+          
+            
+              
+                decibar
+              
+              0.01
+              
+                real
+              
+            
+          
+          
+            -9999
+            no data, value not measured
+          
+        
+        
+          CO2
+          CO2 lab, CO2calc output (micromole/kgSW)
+          Concentraiton of CO2, micromole per kilogram seawater (CO2calc output)
+          float
+          
+            
+              
+                micromolePerKilogram
+              
+              0.01
+              
+                real
+              
+            
+          
+          
+            -9999
+            no data, value not measured
+          
+        
+        
+          fCO2
+          fCO2 lab, CO2calc output (microatm)
+          Fugosity of CO2 (CO2calc output), in saturated air at equilibrium with water in microatmospheres (CO2calc input)
+          float
+          
+            
+              
+                microatmosphere
+              
+              0.01
+              
+                real
+              
+            
+          
+          
+            -9999
+            no data, value not measured
+          
+        
+        
+          pCO2
+          pCO2 lab, CO2calc output  (microatm)
+          Partial pressure of CO2 in seawater (CO2calc output). Product of mole fraction of CO2 in wet air and the total pressure in microatmospheres (CO2calc input)
+          float
+          
+            
+              
+                microatmosphere
+              
+              0.01
+              
+                real
+              
+            
+          
+          
+            -9999
+            no data, value not measured
+          
+        
+        
+          HCO3
+          HCO3 lab, CO2calc output (micromole/kgSW)
+          Concentration of bicarbonate ion micromole per kilogram seawater (CO2calc output)
+          float
+          
+            
+              
+                micromolePerKilogram
+              
+              0.01
+              
+                real
+              
+            
+          
+          
+            -9999
+            no data, value not measured
+          
+        
+        
+          CO3
+          CO3 lab, CO2calc output (micromole/kgSW)
+          Concentration of carbonate ion, micromole per kilogram seawater (CO2calc output)
+          float
+          
+            
+              
+                micromolePerKilogram
+              
+              0.01
+              
+                real
+              
+            
+          
+          
+            -9999
+            no data, value not measured
+          
+        
+        
+          DIC
+          TCO2 (DIC) lab, CO2calc output (micromole/kgSW)
+          Total dissolved CO2, carbonate and bicarbonate (calculated). Also called dissolved inorganic carbon. micromol per kilogram seawater (CO2calc output)
+          float
+          
+            
+              
+                micromolePerKilogram
+              
+              0.01
+              
+                real
+              
+            
+          
+          
+            -9999
+            no data, value not measured
+          
+        
+        
+          OmegaAragonite
+          Omega aragonite lab, CO2calc output 
+          Omega aragonite, aragonite saturation state
+          float
+          
+            
+              
+                dimensionless
+              
+              0.01
+              
+                real
+              
+            
+          
+          
+            -9999
+            no data, value not measured
+          
+        
+        
+          OmegaCalcite
+          Omega calcite lab, CO2calc output 
+          Omega calcite, calcite saturation state
+          float
+          
+            
+              
+                dimensionless
+              
+              0.01
+              
+                real
+              
+            
+          
+          
+            -9999
+            no data, value not measured
+          
+        
+        
+          temp_insitu
+          temperature (C) adj, CO2calc input
+          Temperature of the seawater when the sample was collected (in situ); degrees Celsius (CO2calc input)
+          float
+          
+            
+              
+                celsius
+              
+              0.01
+              
+                real
+              
+            
+          
+          
+            -9999
+            no data, value not measured
+          
+        
+        
+          pH_adjusted
+          pH adj, CO2calc output
+          pH, calculated for in situ salinity and temperature; total scale (CO2calc output)
+          float
+          
+            
+              
+                dimensionless
+              
+              0.01
+              
+                real
+              
+            
+          
+          
+            -9999
+            no data, value not measured
+          
+        
+        
+          CO2_adjusted
+          CO2 adj, CO2calc output (micromole/kgSW)
+          Concentraiton of CO2, in situ conditions; micromole per kilogram seawater (CO2calc output)
+          float
+          
+            
+              
+                micromolePerKilogram
+              
+              0.01
+              
+                real
+              
+            
+          
+          
+            -9999
+            no data, value not measured
+          
+        
+        
+          fCO2_adjusted
+          fCO2 adj, CO2calc output (microatm)
+          Fugacity of CO2, in situ conditions; microatmospheres (CO2calc output)
+          float
+          
+            
+              
+                microatmosphere
+              
+              0.01
+              
+                real
+              
+            
+          
+          
+            -9999
+            no data, value not measured
+          
+        
+        
+          pCO2_adjusted
+          pCO2 adj, CO2calc output (microatm)
+          Partial pressure of CO2, in situ conditions; microatmospheres (CO2calc output)
+          float
+          
+            
+              
+                microatmosphere
+              
+              0.01
+              
+                real
+              
+            
+          
+          
+            -9999
+            no data, value not measured
+          
+        
+        
+          HCO3_adjusted
+          HCO3 adj, CO2calc output (micromole/kgSW)
+          Concentration of bicarbonate ion, in situ conditions; micromole per kilogram seawater (CO2calc output)
+          float
+          
+            
+              
+                micromolePerKilogram
+              
+              0.01
+              
+                real
+              
+            
+          
+          
+            -9999
+            no data, value not measured
+          
+        
+        
+          CO3_adjusted
+          CO3 adj, CO2calc output (micromole/kgSW)
+          Concentration of carbonate ion, in situ conditions; micromole per kilogram seawater (CO2calc output)
+          float
+          
+            
+              
+                micromolePerKilogram
+              
+              0.01
+              
+                real
+              
+            
+          
+          
+            -9999
+            no data, value not measured
+          
+        
+        
+          DIC_adjusted
+          TCO2 (DIC),  CO2calc output(micromole/kgSW)
+          Total dissolved CO2, carbonate and bicarbonate, in situ conditions; Also called dissolved inorganic carbon. micromole per kilogram seawater (CO2calc output)
+          float
+          
+            
+              
+                micromolePerKilogram
+              
+              0.01
+              
+                real
+              
+            
+          
+          
+            -9999
+            no data, value not measured
+          
+        
+        
+          OmegaAragonite_adjusted
+          Omega aragonite adj, CO2calc output 
+          Omega aragonite, in situ conditions; aragonite saturation state
+          float
+          
+            
+              
+                dimensionless
+              
+              0.01
+              
+                real
+              
+            
+          
+          
+            -9999
+            no data, value not measured
+          
+        
+        
+          OmegaCalcite_adjusted
+          Omega calcite adj, CO2calc output 
+          Omega calcite, in situ conditions; calcite saturation state
+          float
+          
+            
+              
+                dimensionless
+              
+              0.01
+              
+                real
+              
+            
+          
+          
+            -9999
+            no data, value not measured
+          
+        
+        
+          k1k2
+          source of CO2 constants
+          source dissociation constants for Carbonic acid  (K1 and K2)
+          string
+          
+            
+              
+                
+                  any text
+                
+              
+            
+          
+        
+        
+          kf
+          dissociation constant for HF
+          source of dissociation constant for HF using method from Dickson and Riley (1979 in Dickson and Goyet, 1994).
+          string
+          
+            
+              
+                
+                  any text
+                
+              
+            
+          
+        
+        
+          ks
+          source of KHSO4 constant
+          source of dissociation constant for potassium sulfate (KHSO4)
+          string
+          
+            
+              
+                
+                  
+                    Dickson
+                    Dickson (1990b)
+                  
+                  
+                    Khoo
+                    Khoo et al. (1977)
+                  
+                
+              
+            
+          
+        
+        
+          pHscale
+          pH scale (user-selected)
+          User-selected scale for pH units 
+          string
+          
+            
+              
+                
+                  
+                    Free scale (mol/kgSW)
+                    Free scale (mol/kgSW)
+                  
+                  
+                    NBS scale (mol/kgSW)
+                    NBS scale (mol/kgSW)
+                  
+                  
+                    Seawater scale (mol/kgSW)
+                    Seawater scale (mol/kgSW)
+                  
+                  
+                    Total scale (mol/kgSW)
+                    Total scale (mol/kgSW)
+                  
+                
+              
+            
+          
+        
+      
+      670
+    
+  
+  
+    
+      
+        
+          SI-derived unit of temperature
+        
+        
+          decibar = 0.1 bar
+        
+        
+          360 degrees comprise a unit circle.
+        
+        
+          a designation asserting the absence of an associated unit
+        
+        
+          1 microAtmosphere = 0.000001 atmospheres = 1013.25 millibars = 0.101325 Pascals = 0.0000147 lb/sq.in
+        
+        
+          a concentration unit used in oceanography. volume changes with depth, but mass does not. Not sure what the unitType should be.
+        
+        
+          ratio of two quantities as parts per thousand (1:1000)
+        
+      
+    
+  

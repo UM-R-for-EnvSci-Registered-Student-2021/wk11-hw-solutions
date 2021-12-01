@@ -1,0 +1,156 @@
+---
+title: "Week 11 - Assignment"
+author: "Jose Luis Rodriguez Gil"
+date: "24/11/2021"
+output: 
+  html_document:
+    number_sections: true
+    keep_md: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r libraries, include=FALSE}
+library(tidyverse)
+library(janitor)
+library(here)
+library(lubridate)
+library(gt)
+library(patchwork)
+
+library(broom) # Needed to tidy-up model outputs
+library(fs) # Series of tools to work with fyle-systems
+
+```
+
+```{r my theme, include=FALSE}
+
+source(here("functions", "theme_pepe.R"))
+
+theme_set(theme_pepe())  #Sets the theme for all ggplot plots in this .Rmd file (no need to call it in the plot itself)
+
+
+```
+
+
+# Read the data
+
+The first thing we need to do is to read all the available data. We have data fro three sites collected over multiple years, with each year in its own `.csv` file. The table in each file does not contain a column called "year", the only reference to the year is in the file name. We want to examine temporal trends, so we need to incorporate the year information in the final data, as such, we also need to gather that information form the file name into its own column of the final data set.
+
+```{r, message=FALSE}
+
+kelp_data <- tibble(files = fs::dir_ls(here("data"))) %>%  # we create a tibble of files in that folder
+  mutate(data = pmap(list(files), 
+                     ~ read_csv(..1, col_names = TRUE, na = c("-99999")))) %>%  # We load each individual file as a tibble-within-a-tibble
+  mutate(data = pmap(list(files, data), 
+                     ~ mutate(..2, source_file = as.character(..1)))) %>% # To each individual dataset we add the name of the file it came from (for reference)
+  select(data) %>% # select only the actual data tibbles
+  map_df(bind_rows) %>%  # bind them all into one tibble
+  clean_names() %>%  # clean the column names 
+    mutate(year = stringr::str_extract(source_file, "(?<=Kelp_NPP_)[:digit:]{4}")) %>% # extract the date using regex
+  select(-source_file) %>%  # we dont need it anymore 
+  mutate(year = as.numeric(year)) # because year was treated as a string, but we need it to be numeric in order to plot it.
+
+
+print(kelp_data)
+
+
+```
+
+
+# Model fits
+
+Now we are going to run the `lm()` for `npp_dry` vs `year`. In order to make the results easier to handle, we want to extract the most relevant data from these models into their own columns. 
+
+```{r}
+
+kelp_data_and_lm <- kelp_data %>% 
+  group_by(site) %>% 
+  nest() %>% 
+  mutate(model = pmap(list(data),
+                   ~ lm(npp_dry ~ year, data = ..1))) %>%  # Main model fit
+  mutate(intercept = map_dbl(.x = model,
+                             ~ round(tidy(.x)$estimate[1], digits = 3)), # extract the intercept into its own column
+         slope = map_dbl(.x = model,
+                         ~ round(tidy(.x)$estimate[2], digits = 4)), # extract the slope into its own column
+         r_squared = map_dbl(.x = model,
+                             ~ round(glance(.x)$r.squared, digits = 3)), # extract the r_squared into its own column
+         p_value = map_dbl(.x = model,
+                           ~ round(glance(.x)$p.value, digits = 3)) # extract the p_value into its own column
+  )
+
+print(kelp_data_and_lm)
+
+```
+
+Now let's format it a bit with `gt()` so it is easier to read by humans. One "problem" here is that we have the columns `data` and `model` wich are filled with datasets. Those cannot be placed in a regular table, so we will remove them before we apply `gt()`
+
+```{r}
+
+kelp_data_and_lm %>% 
+  select(-data, -model) %>% 
+  gt() %>% 
+  tab_header(
+    title = md("**Change on Giant Kelp NPP**"),
+    subtitle = "Summary of the regression of Giant Kelp NPP vs time for the three studied sites")
+
+```
+
+# Plots
+
+Now that we have a consolidated tibble with the data, the models, and the main descriptors of the regression, we can use this to create our plots.
+
+```{r}
+
+kelp_plot <- kelp_data_and_lm %>% 
+  mutate(plot = pmap(list(data, site, intercept, slope, r_squared),
+                     ~ ggplot() +
+                       geom_point(data = ..1, aes(x = year, y = npp_dry), alpha = 0.4, stroke = 0) +
+                       geom_smooth(data = ..1, aes(x = year, y = npp_dry), method = "lm", colour = "grey20", size = 0.3) +
+                       
+                       annotate(geom = "text",
+                                x = 2015,
+                                y = 0.045,
+                                label = str_c("y = ", ..3, " + ", ..4 ,"x", sep = ""),
+                                hjust = 0,
+                                vjust = 0,
+                                size = 2.5) +
+                       
+                       annotate(geom = "text",
+                                x = 2015,
+                                y = 0.045,
+                                label = str_c('R^2 == ', ..5),
+                                parse = TRUE,
+                                hjust = 0,
+                                vjust = 1.5, 
+                                size = 2.5) +
+                       
+                       coord_cartesian(xlim = c(min(kelp_data$year, na.rm = TRUE), max(kelp_data$year, na.rm = TRUE)),
+                                       ylim = c(0, max(kelp_data$npp_dry, na.rm = TRUE)),
+                                       expand = expansion(mult = 0, add = 0)) +
+                       
+                       labs(title = str_c("Site:", ..2, sep = " "),
+                            x = NULL,
+                            y = expression("Net primary production of"~italic("M. pyrifera")~ "dry mass" ~(kg~.~m^{-2}~.~d^{-1})))),
+         
+         filename = str_c(site, "_plot.pdf", sep = "")) %>% 
+  ungroup() %>% 
+  select(plot, filename)
+
+kelp_plot
+
+```
+
+
+Now that we have a simplified tibble with just the plots and the given file names, i can use `pwalk()` to walk through the list and apply `ggsave()` to each of them
+
+```{r}
+  
+kelp_plot %>% 
+  pwalk(ggsave,                    # what we want to do as we walk thorugh the object   
+        path =  here("figures"),   # where we want to save it
+        width = 120, height = 120, units = "mm") # other things you need for ggsave
+```
+

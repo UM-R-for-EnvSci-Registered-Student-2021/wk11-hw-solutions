@@ -1,0 +1,1378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml packageId="knb-lter-sbc.75.4"
+  system="https://pasta.edirepository.org"
+  xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0"
+  xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://nis.lternet.edu/schemas/EML/eml-2.2.0/xsd/eml.xsd">
+  <access authSystem="https://pasta.edirepository.org/authentication"
+    order="allowFirst" scope="document" system="https://pasta.edirepository.org">
+    <allow>
+      <principal>uid=SBC,o=LTER,dc=ecoinformatics,dc=org</principal>
+      <permission>all</permission>
+    </allow>
+    <allow>
+      <principal>uid=lkui,o=LTER,dc=ecoinformatics,dc=org</principal>
+      <permission>all</permission>
+    </allow>
+    <allow>
+      <principal>public</principal>
+      <permission>read</permission>
+    </allow>
+  </access>
+  <dataset>
+    <alternateIdentifier system="https://doi.org">doi:10.6073/pasta/08d9260f81d1fa492cc9d02a6481a2f3</alternateIdentifier>
+    <shortName>Benchmark water samples pH for field calibration</shortName>
+    <title>SBC LTER: pH time series: Water-sample pH and CO2 system chemistry, ongoing since 2011</title>
+    <creator>
+      <organizationName>Santa Barbara Coastal LTER</organizationName>
+      <address>
+        <deliveryPoint>Marine Science Institute University of California</deliveryPoint>
+        <city>Santa Barbara</city>
+        <administrativeArea>CA</administrativeArea>
+        <postalCode>93106</postalCode>
+        <country>USA</country>
+      </address>
+      <electronicMailAddress>sbclter@msi.ucsb.edu</electronicMailAddress>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Gretchen E</givenName>
+        <surName>Hofmann</surName>
+      </individualName>
+      <address>
+        <deliveryPoint>Department of Ecology, Evolution and Marine Biology University of California</deliveryPoint>
+        <city>Santa Barbara</city>
+        <administrativeArea>CA</administrativeArea>
+        <postalCode>93106-9620</postalCode>
+        <country>US</country>
+      </address>
+      <phone>805-893-6175</phone>
+      <electronicMailAddress>hofmann@lifesci.ucsb.edu</electronicMailAddress>
+      <userId directory="https://orcid.org/">https://orcid.org/0000-0003-0931-1238</userId>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Carol A</givenName>
+        <surName>Blanchette</surName>
+      </individualName>
+      <address>
+        <deliveryPoint>Marine Science Institute University of California</deliveryPoint>
+        <city>Santa Barbara</city>
+        <administrativeArea>CA</administrativeArea>
+        <postalCode>93106-6150</postalCode>
+        <country>USA</country>
+      </address>
+      <electronicMailAddress>blanchet@lifesci.ucsb.edu</electronicMailAddress>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Uta</givenName>
+        <surName>Passow</surName>
+      </individualName>
+      <address>
+        <deliveryPoint>Marine Science Institute University of California</deliveryPoint>
+        <city>Santa Barbara</city>
+        <administrativeArea>CA</administrativeArea>
+        <postalCode>93106-6150</postalCode>
+        <country>USA</country>
+      </address>
+      <electronicMailAddress>uta.passow@lifesci.ucsb.edu</electronicMailAddress>
+      <userId directory="https://orcid.org/">https://orcid.org/0000-0002-2296-6936</userId>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Libe</givenName>
+        <surName>Washburn</surName>
+      </individualName>
+      <address>
+        <deliveryPoint>Marine Science Institute University of California</deliveryPoint>
+        <city>Santa Barbara</city>
+        <administrativeArea>CA</administrativeArea>
+        <postalCode>93106-6150</postalCode>
+        <country>US</country>
+      </address>
+      <phone>805-893-7367</phone>
+      <electronicMailAddress>washburn@eri.ucsb.edu</electronicMailAddress>
+      <userId directory="https://orcid.org/">https://orcid.org/0000-0002-8728-4768</userId>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Jay</givenName>
+        <surName>Lunden</surName>
+      </individualName>
+      <address>
+        <deliveryPoint>Marine Science Institute University of California</deliveryPoint>
+        <city>Santa Barbara</city>
+        <administrativeArea>CA</administrativeArea>
+        <postalCode>96106-6150</postalCode>
+      </address>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Emily</givenName>
+        <surName>Rivest</surName>
+      </individualName>
+      <address>
+        <deliveryPoint>Bodega Marine Laboratory University of California</deliveryPoint>
+        <city>Davis</city>
+        <administrativeArea>CA</administrativeArea>
+        <country>US</country>
+      </address>
+      <electronicMailAddress>ebrivest@ucdavis.edu</electronicMailAddress>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Lydia</givenName>
+        <surName>Kapsenberg</surName>
+      </individualName>
+      <address>
+        <deliveryPoint>Marine Science Institute University of California</deliveryPoint>
+        <city>Santa Barbara</city>
+        <administrativeArea>CA</administrativeArea>
+        <postalCode>93106</postalCode>
+        <country>US</country>
+      </address>
+      <electronicMailAddress>lydia.kapsenberg@lifesci.ucsb.edu</electronicMailAddress>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Li</givenName>
+        <surName>Kui</surName>
+      </individualName>
+      <organizationName>UCSB</organizationName>
+      <address>
+        <deliveryPoint>Marine Science Institute University of California</deliveryPoint>
+        <city>Santa Barbara</city>
+        <administrativeArea>CA</administrativeArea>
+        <postalCode>93106-6150</postalCode>
+        <country>US</country>
+      </address>
+      <electronicMailAddress>lkui@ucsb.edu</electronicMailAddress>
+      <userId directory="https://orcid.org/">https://orcid.org/0000-0002-5894-4907</userId>
+    </creator>
+    <pubDate>2018-08-17</pubDate>
+    <language>English</language>
+    <abstract>
+      <para>
+  Data are a time-series of pH and carbonate chemistry in
+  manually-collected sea water samples from sixteen near-shore locations
+  and 20 locations along the Santa Barbara Channel, California, USA, and
+  intended to benchmark data from moored pH instruments. Data collection
+  began in June 2011 and is ongoing. Time-series for pH sensors deployed
+  in the field (e.g., SeaFET) are available elsewhere.
+</para>
+      <para>
+  Discrete seawater samples were collected by hand or using a Niskin
+  bottle. In the laboratory, samples were analyzed for pH (total scale)
+  and total alkalinity. Two parameters were used to calculate the full
+  suite of carbonate chemistry parameters using the CO2calc algorithms.
+  Program outputs are included for laboratory conditions as input, and
+  adjusted for situ temperature. See Methods for more information, e.g.,
+  Lunden, et al.
+</para>
+      <para>
+  Data were collected by a consortium of research groups with the intent
+  to leverage their collective assets and expertise. These groups (and
+  sponsors) include Santa Barbara Coastal LTER (NSF), OMEGAS Project
+  (NSF), Passow Lab (Calif. State Water Board), Hofmann Lab (NSF, CINMS,
+  US NPS).
+</para>
+    </abstract>
+    <keywordSet>
+      <keyword keywordType="theme">acidity</keyword>
+      <keyword keywordType="theme">alkalinity</keyword>
+      <keyword keywordType="theme">carbon dioxide</keyword>
+      <keyword keywordType="theme">dissolved inorganic carbon</keyword>
+      <keyword keywordType="theme">LTER</keyword>
+      <keyword keywordType="theme">pH</keyword>
+      <keyword keywordType="theme">Santa Barbara Coastal</keyword>
+      <keywordThesaurus>LTER Controlled Vocabulary v1</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword keywordType="theme">carbonate chemistry</keyword>
+      <keyword keywordType="theme">OMEGAS</keyword>
+      <keywordThesaurus>SBC-LTER Controlled Vocabulary</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword keywordType="place">Alegria</keyword>
+      <keyword keywordType="place">Arroyo Quemado</keyword>
+      <keyword keywordType="place">Cambria</keyword>
+      <keyword keywordType="place">Coal Oil Point</keyword>
+      <keyword keywordType="place">Lompoc Landing</keyword>
+      <keyword keywordType="place">Mohawk</keyword>
+      <keyword keywordType="place">Purissima</keyword>
+      <keyword keywordType="place">Razors</keyword>
+      <keyword keywordType="place">Stearns Wharf</keyword>
+      <keywordThesaurus>Santa Barbara Coastal LTER Places</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword keywordType="theme">acidity</keyword>
+      <keyword keywordType="theme">alkalinity</keyword>
+      <keywordThesaurus>NBII Biocomplexity</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword keywordType="theme">LTER</keyword>
+      <keywordThesaurus>none</keywordThesaurus>
+    </keywordSet>
+    <intellectualRights>
+      <para>
+  This data package is released under the Creative Commons License
+  Attribution 4.0 International (CC BY 4.0, see
+  https://creativecommons.org/licenses/by/4.0/). This license states
+  that consumers ("Data Users" herein) may distribute, adapt,
+  reuse, remix, and build upon this work, as long as they give
+  appropriate credit, provide a link to the license, and indicate if
+  changes were made. If redistributed, a Data User may not apply
+  additional restrictions or technological measures that prevent access.
+</para>
+      <para>
+  The Data User has an ethical obligation to cite the data source
+  appropriately in any publication or product that results from its use,
+  and notify the data contact or creator. Communication, collaboration,
+  or co-authorship (as appropriate) with the creators of this data
+  package is encouraged to prevent duplicate research or publication.
+  The Data User is urged to contact the authors of these data if any
+  questions about methodology or results occur. The Data User should
+  realize that these data may be actively used by others for ongoing
+  research and that coordination may be necessary to prevent duplication
+  or inappropriate use. The Data User should realize that
+  misinterpretation may occur if data are used outside of the context of
+  the original study. The Data User should be aware that data are
+  updated periodically and it is the responsibility of the Data User to
+  check for new versions of the data.
+</para>
+      <para>
+  While substantial efforts are made to ensure the accuracy of data and
+  associated documentation, complete accuracy of data sets cannot be
+  guaranteed. This data package (with its components) is made available
+  “as is” and with no warranty of accuracy or fitness for use. The
+  creators of this data package and the repository where these data were
+  obtained shall not be liable for any damages resulting from
+  misinterpretation, use or misuse of the data package or its
+  components.
+</para>
+    </intellectualRights>
+    <distribution>
+      <online>
+        <url function="information">http://sbc.lternet.edu/</url>
+      </online>
+    </distribution>
+    <coverage>
+      <geographicCoverage>
+        <geographicDescription>Rancho Marino: Rancho Marino (RMC) is in the rocky intertidal area near Cambria, CA. It is is part of the Univeristy of California Natural Reserve System</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-121.0928466</westBoundingCoordinate>
+          <eastBoundingCoordinate>-121.0928466</eastBoundingCoordinate>
+          <northBoundingCoordinate>35.54030478</northBoundingCoordinate>
+          <southBoundingCoordinate>35.54030478</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>Purisima Point: Purisima (PUR) is located pproximately 3.5 km SSE of Purisima Point, California, USA, in rocky habitat 15 meters below Mean Sea Level (MSL).</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-120.6276</westBoundingCoordinate>
+          <eastBoundingCoordinate>-120.6276</eastBoundingCoordinate>
+          <northBoundingCoordinate>34.72602</northBoundingCoordinate>
+          <southBoundingCoordinate>34.72602</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>Lompoc Landing: Lompoc Landing (LOL) is a rocky intertidal site located on the Vandenberg Air Force Base (VAFB) and is just north of Surf Beach</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-120.6087994</westBoundingCoordinate>
+          <eastBoundingCoordinate>-120.6087994</eastBoundingCoordinate>
+          <northBoundingCoordinate>34.71905679</northBoundingCoordinate>
+          <southBoundingCoordinate>34.71905679</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>Razors: Razors (RZR) is in the rocky intertidal near Alegria Beach, located on the Hollister Ranch, between Gaviota and Point Conception</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-120.278178</westBoundingCoordinate>
+          <eastBoundingCoordinate>-120.278178</eastBoundingCoordinate>
+          <northBoundingCoordinate>34.46713695</northBoundingCoordinate>
+          <southBoundingCoordinate>34.46713695</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>ALE: Alegria (ALE) is located offshore from the community of Hollister Ranch, between Gaviota and Pt. Conception. Depth: 15 meters.</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-120.28998</westBoundingCoordinate>
+          <eastBoundingCoordinate>-120.28998</eastBoundingCoordinate>
+          <northBoundingCoordinate>34.46085</northBoundingCoordinate>
+          <southBoundingCoordinate>34.46085</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>ARQ: Arroyo Quemado Reef (ARQ) is located 0.16km from river mouth; estimated depth is 35 feet. This site (ARQ) is about 200m to the SE of a previously sampled site, AQM.</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-120.11965</westBoundingCoordinate>
+          <eastBoundingCoordinate>-120.11965</eastBoundingCoordinate>
+          <northBoundingCoordinate>34.46495</northBoundingCoordinate>
+          <southBoundingCoordinate>34.46495</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>Coal Oil Point: Coal Oil Point (COP) is located in the rocky intertidal area on the western edge of the University of California, Santa Barbara (UCSB) campus, and is part of the UC Natural Reserve System</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-119.8782861</westBoundingCoordinate>
+          <eastBoundingCoordinate>-119.8782861</eastBoundingCoordinate>
+          <northBoundingCoordinate>34.40685962</northBoundingCoordinate>
+          <southBoundingCoordinate>34.40685962</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>MKO: MKO is located at Mohawk reef, at the offshore spar buoy. Depth is 10.8 meters.</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-119.73012</westBoundingCoordinate>
+          <eastBoundingCoordinate>-119.73012</eastBoundingCoordinate>
+          <northBoundingCoordinate>34.39323</northBoundingCoordinate>
+          <southBoundingCoordinate>34.39323</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <geographicCoverage>
+        <geographicDescription>Stearns Wharf, Santa Barbara CA: Stearns Wharf, Santa Barbara CA</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-119.68493</westBoundingCoordinate>
+          <eastBoundingCoordinate>-119.68493</eastBoundingCoordinate>
+          <northBoundingCoordinate>34.40934</northBoundingCoordinate>
+          <southBoundingCoordinate>34.40934</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>2011-06-07</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate>2019-06-25</calendarDate>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+    </coverage>
+    <contact>
+      <positionName>Information Manager, Santa Barbara Coastal LTER</positionName>
+      <address scope="document">
+        <deliveryPoint>Marine Science Institute</deliveryPoint>
+        <deliveryPoint>University of California</deliveryPoint>
+        <city>Santa Barbara</city>
+        <administrativeArea>California</administrativeArea>
+        <postalCode>93106-6150</postalCode>
+        <country>United States</country>
+      </address>
+      <phone phonetype="voice">805 893 2071</phone>
+      <electronicMailAddress>sbclter@msi.ucsb.edu</electronicMailAddress>
+      <onlineUrl>https://sbclter.msi.ucsb.edu/</onlineUrl>
+    </contact>
+    <publisher>
+      <organizationName>Santa Barbara Coastal Long Term Ecological Research
+        Project</organizationName>
+    </publisher>
+    <methods>
+      <methodStep>
+        <description>
+          <section>
+            <para>
+    For subtidal sites, discrete bottles samples were collected by a
+    SCUBA diver using a Niskin bottle, firing it manually. For
+    intertidal sites, discrete bottle samples were collected in a
+    bottle, manually. These data are intended to be benchmark samples
+    for continuously recording pH sensors (e.g., SeaFET), and so water
+    samples were collected as close to the pH sensor as possible and
+    approximately in concurrence with the sensor's voltage measurement.
+    Water samples were poisoned with saturated mercuric chloride
+    immediately after collection (following SOP1, Dickson et al. 2007),
+    sealed, and stored in a cool, dark place until the seawater was
+    analyzed.
+  </para>
+            <para>
+    Salinity, pH, and total alkalinity in the water samples were
+    measured in the laboratory. Salinity was measured using a benchtop
+    conductivity meter (YSI 3100). Seawater pH was measured using a
+    spectrophotometric method with indicator dye, unpurified m-cresol
+    purple (Sigma-Aldrich, SOP 6b, Dickson et al. 2007). Total
+    alkalinity (TA) was measured using an automated, open-cell
+    potentiometric titration (SOP 3b, Dickson et al. 2007) with a
+    Mettler-Toledo T50 titrator and a DG115-SC pH probe
+    (Mettler-Toledo). The probe was calibrated using a Tris buffer (A.
+    Dickson Laboratory, Scripps Institution of Oceanography). Titrations
+    were performed using certified acid titrant (~0.1M HCl, 0.6 M NaCl;
+    A. Dickson Laboratory, Scripps Institution of Oceanography).
+    Certified reference materials (CRMs) from A. Dickson Laboratory,
+    Scripps Institution of Oceanography, were used to determine the
+    accuracy and precision of the titrations daily before experimental
+    samples were measured. Analyzed CRMs were accurate within 10
+    micromole kg<superscript>-1</superscript>. pH at 25°C, AT,
+    temperature, and salinity were used to calculate the pH and
+    pCO<subscript>2</subscript> of the treatments using CO2calc (Robbins
+    et al. 2010), with CO­<subscript>2</subscript> constants K1, K2 from
+    Millero et al. (2006), and pH expressed on the total scale (mol
+    kg-SW<superscript>-1</superscript>).
+  </para>
+            <para>
+    The CO2calc calculation is programmed in R using package “seacarb”
+    and function “carb”.
+  </para>
+            <para>
+    References:
+  </para>
+            <para>
+    Robbins, L.L., Hansen, M.E., Kleypas, J.A., and Meylan, S.C., 2010,
+    CO2calc: A user-friendly seawater carbon calculator for Windows, Max
+    OS X, and iOS (iPhone): U.S. Geological Survey Open-File Report
+    2010-1280, 17 pp.
+    http://sbc.lternet.edu/external/Ocean/Protocols/USGS_CO2calc_manual_Open_File_Report_2010_1280.pdf
+  </para>
+            <para>
+    Rivest, E. B., M. C. O'Brien, L. Kapsenberg, C. Gotschalk, C. A.
+    Blanchette, U. Hoshijima and G. E. Hofmann. 2016. Beyond the
+    benchtop and the benthos: dataset management planning and design for
+    time series of ocean carbonate chemistry associated with
+    Durafet®-based pH sensors. Ecological Informatics, 36: 209-220.
+    https://doi.org/10.1016/j.ecoinf.2016.08.005
+  </para>
+            <para>
+    Dickson, A.G., C.L. Sabine, and J.R. Christian (Eds.). 2007. Guide
+    to Best Practices for Ocean CO2 Measurements, PICES Spec. ed.
+    http://sbc.lternet.edu/external/Ocean/Protocols/Guide_for_Ocean_co2_measurements.pdf
+  </para>
+          </section>
+        </description>
+        <protocol>
+          <title>SBC LTER Protocol: Collection and processing of benchmark water samples for DuraFET type pH sensors</title>
+          <creator>
+            <individualName>
+              <surName>Hofmann</surName>
+            </individualName>
+          </creator>
+          <distribution>
+            <online>
+              <url function="download">https://sbclter.msi.ucsb.edu/external/Ocean/Protocols/Hofmann_etal_2014-10-21_durafet_benchmark_samples.pdf</url>
+            </online>
+          </distribution>
+        </protocol>
+      </methodStep>
+    </methods>
+    <project>
+      <title>Santa Barbara Coastal Long Term Ecological Research Project</title>
+      <personnel scope="document">
+        <individualName>
+          <salutation>Dr.</salutation>
+          <givenName>Robert</givenName>
+          <surName>Miller</surName>
+        </individualName>
+        <address scope="document">
+          <deliveryPoint>Marine Science Institute</deliveryPoint>
+          <deliveryPoint>University of California</deliveryPoint>
+          <city>Santa Barbara</city>
+          <administrativeArea>California</administrativeArea>
+          <postalCode>93106-6150</postalCode>
+          <country>United States</country>
+        </address>
+        <phone phonetype="voice">805 893 6174</phone>
+        <electronicMailAddress>miller@msi.ucsb.edu</electronicMailAddress>
+        <role>Principal Investigator</role>
+      </personnel>
+      <personnel scope="document">
+        <individualName>
+          <salutation>Dr.</salutation>
+          <givenName>Dan</givenName>
+          <surName>Reed</surName>
+        </individualName>
+        <address scope="document">
+          <deliveryPoint>Marine Science Institute</deliveryPoint>
+          <deliveryPoint>University of California</deliveryPoint>
+          <city>Santa Barbara</city>
+          <administrativeArea>California</administrativeArea>
+          <postalCode>93106-6150</postalCode>
+          <country>United States</country>
+        </address>
+        <phone phonetype="voice">805 893 8363</phone>
+        <electronicMailAddress>dan.reed@lifesci.ucsb.edu</electronicMailAddress>
+        <role>Co-principal Investigator</role>
+      </personnel>
+      <personnel scope="document">
+        <individualName>
+          <salutation>Dr.</salutation>
+          <givenName>Adrian</givenName>
+          <surName>Stier</surName>
+        </individualName>
+        <address scope="document">
+          <deliveryPoint>Department of Ecology, Evolution and Marine Biology</deliveryPoint>
+          <deliveryPoint>University of California</deliveryPoint>
+          <city>Santa Barbara</city>
+          <administrativeArea>California</administrativeArea>
+          <postalCode>93106-9260</postalCode>
+          <country>United States</country>
+        </address>
+        <phone phonetype="voice">805 893 5467</phone>
+        <electronicMailAddress>adrian.stier@lifesci.ucsb.edu</electronicMailAddress>
+        <role>Co-principal Investigator</role>
+      </personnel>
+      <personnel scope="document">
+        <individualName>
+          <salutation>Dr.</salutation>
+          <givenName>Gretchen</givenName>
+          <surName>Hoffman</surName>
+        </individualName>
+        <address scope="document">
+          <deliveryPoint>Department of Ecology, Evolution and Marine Biology</deliveryPoint>
+          <deliveryPoint>University of California</deliveryPoint>
+          <city>Santa Barbara</city>
+          <administrativeArea>California</administrativeArea>
+          <postalCode>93106-9620</postalCode>
+          <country>United States</country>
+        </address>
+        <phone phonetype="voice">805 893 6175</phone>
+        <electronicMailAddress>hofmann@lifesci.ucsb.edu</electronicMailAddress>
+        <role>Co-principal Investigator</role>
+      </personnel>
+      <personnel scope="document">
+        <individualName>
+          <salutation>Dr.</salutation>
+          <givenName>David</givenName>
+          <surName>Siegel</surName>
+        </individualName>
+        <address scope="document">
+          <deliveryPoint>Institute for Computational Earth System Science</deliveryPoint>
+          <deliveryPoint>University of California</deliveryPoint>
+          <city>Santa Barbara</city>
+          <administrativeArea>California</administrativeArea>
+          <postalCode>93106-3060</postalCode>
+          <country>United States</country>
+        </address>
+        <phone phonetype="voice">805 893 4547</phone>
+        <electronicMailAddress>davey@icess.ucsb.edu</electronicMailAddress>
+        <role>Co-principal Investigator</role>
+      </personnel>
+      <abstract>
+        <section>
+          <para>The primary research objective of the Santa Barbara Coastal LTER is to investigate
+            the importance of land and ocean processes in structuring giant kelp
+              (<emphasis>Macrocystis pyrifera</emphasis> ) forest ecosystems. As in many temperate
+            regions, the shallow rocky reefs in the Santa Barbara Channel, California, are dominated
+            by giant kelp forests. Because of their close proximity to shore, kelp forests are
+            influenced by physical and biological processes occurring on land as well as in the open
+            ocean. SBC LTER research focuses on measuring and modeling the patterns, transport, and
+            processing of material constituents (e.g., nutrients, carbon, sediment, organisms, and
+            pollutants) from terrestrial watersheds and the coastal ocean to these reefs.
+            Specifically, we are examining the effects of these material inputs on the primary
+            production of kelp, and the population dynamics, community structure, and trophic
+            interactions of kelp forest ecosystems.</para>
+        </section>
+      </abstract>
+      <funding>
+        <section>
+          <para>NSF Award OCE-9982105, OCE-0620276, OCE-1232779, OCE-1831937</para>
+        </section>
+      </funding>
+    </project>
+    <dataTable>
+      <entityName>water sample pH and CO2calc output</entityName>
+      <entityDescription>measured pH, alkalinity (or total CO2) from water samples with carbonate system parameters calculated by CO2calc for both laboratory (input) and in situ (adjusted) conditions</entityDescription>
+      <physical>
+        <objectName>SBCLTER_pH_water_samples_20200817.csv</objectName>
+        <size unit="byte">177078</size>
+        <authentication method="MD5">1b6d19fdd8b71e05b38650071d038bbd</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\r\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+              <collapseDelimiters>no</collapseDelimiters>
+              <quoteCharacter>"</quoteCharacter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://pasta.lternet.edu/package/data/eml/knb-lter-sbc/75/4/be7216be6ab9100663d4d84a7211d40d</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>site</attributeName>
+          <attributeLabel>Site code</attributeLabel>
+          <attributeDefinition>Site code of sample</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>ALC</code>
+                    <definition>Landing Cover</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>ALE</code>
+                    <definition>Aelgria</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>AQI</code>
+                    <definition>Arroyo Quemado Inshore</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>ARQ</code>
+                    <definition>Arroyo Quemado</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>COP</code>
+                    <definition>Coal Oil Point</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>IML</code>
+                    <definition>IML</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>INN</code>
+                    <definition>INN</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>LOL</code>
+                    <definition>Lompoc Landing</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>LOP</code>
+                    <definition>LOP</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>MKO</code>
+                    <definition>Mohawk Reef</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>NCY</code>
+                    <definition>NCY</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>PRZ</code>
+                    <definition>Prisoners Harbor</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>PUR</code>
+                    <definition>Purisima Pt</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>RMC</code>
+                    <definition>Rancho Marino (Cambria)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>RZR</code>
+                    <definition>Razors</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>SBH</code>
+                    <definition>Santa Barbara Harbor (Stearns Wharf)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>SMN</code>
+                    <definition>San Miguel Is. North</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>datetime</attributeName>
+          <attributeLabel>Time stamp (UTC)</attributeLabel>
+          <attributeDefinition>Date and time sample was collected in ISO format (UTC)</attributeDefinition>
+          <storageType>date</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD hh:mm:ss</formatString>
+              <dateTimePrecision>1 minute</dateTimePrecision>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>latitude_degN</attributeName>
+          <attributeLabel>Latitude (degree)</attributeLabel>
+          <attributeDefinition>Latitude of site in decimal degrees</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>degree</standardUnit>
+              </unit>
+              <precision>1e-04</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>no data, value not measured</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>longitude_degW</attributeName>
+          <attributeLabel>Longitude (degree)</attributeLabel>
+          <attributeDefinition>Longitude of site in decimal degrees, West is negative</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>degree</standardUnit>
+              </unit>
+              <precision>1e-04</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>no data, value not measured</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>temp_lab</attributeName>
+          <attributeLabel>Temperature (C)</attributeLabel>
+          <attributeDefinition>Water temperature when pH was measured, measured with benchtop CT instrument (CO2calc input)</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>celsius</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>no data, value not measured</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>pH_lab</attributeName>
+          <attributeLabel>pH, measured (see pH scale)</attributeLabel>
+          <attributeDefinition>pH (measured), on scale given in column named pH Scale (CO2calc input)</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <interval>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </interval>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>no data, value not measured</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>TA_lab</attributeName>
+          <attributeLabel>TA, measured (micromole/kgSW)</attributeLabel>
+          <attributeDefinition>Total alkalinity (measured), micromole per kilogram seawater  (CO2calc input)</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>micromolePerKilogram</customUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>no data, value not measured</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>salinity_lab</attributeName>
+          <attributeLabel>Salinity (PPT)</attributeLabel>
+          <attributeDefinition>Salinity measured with benchtop CT instrument (CO2calc input)</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>partsPerThousand</customUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>no data, value not measured</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>totalPt</attributeName>
+          <attributeLabel>Total P (micromole/kgSW)</attributeLabel>
+          <attributeDefinition>Concentration of phosphorus (CO2calc input, optional), micromole per kilogram seawater. Data that are unavailable are set to zero</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>micromolePerKilogram</customUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>0</code>
+            <codeExplanation>no data, value not measured</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>totalSi</attributeName>
+          <attributeLabel>Total Si (micromole/kgSW)</attributeLabel>
+          <attributeDefinition>Concentration of silicate  (CO2calc input, optional) in micromole per kilogram seawater. Data that are unavailable are set to zero</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>micromolePerKilogram</customUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>0</code>
+            <codeExplanation>no data, value not measured</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>P</attributeName>
+          <attributeLabel>Pressure (dbars)</attributeLabel>
+          <attributeDefinition>Water pressure in decibars, for near-surface, set to zero (CO2calc input)</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>decibar</customUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>no data, value not measured</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>CO2</attributeName>
+          <attributeLabel>CO2 lab, CO2calc output (micromole/kgSW)</attributeLabel>
+          <attributeDefinition>Concentraiton of CO2, micromole per kilogram seawater (CO2calc output)</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>micromolePerKilogram</customUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>no data, value not measured</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>fCO2</attributeName>
+          <attributeLabel>fCO2 lab, CO2calc output (microatm)</attributeLabel>
+          <attributeDefinition>Fugosity of CO2 (CO2calc output), in saturated air at equilibrium with water in microatmospheres (CO2calc input)</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>microatmosphere</customUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>no data, value not measured</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>pCO2</attributeName>
+          <attributeLabel>pCO2 lab, CO2calc output  (microatm)</attributeLabel>
+          <attributeDefinition>Partial pressure of CO2 in seawater (CO2calc output). Product of mole fraction of CO2 in wet air and the total pressure in microatmospheres (CO2calc input)</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>microatmosphere</customUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>no data, value not measured</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>HCO3</attributeName>
+          <attributeLabel>HCO3 lab, CO2calc output (micromole/kgSW)</attributeLabel>
+          <attributeDefinition>Concentration of bicarbonate ion micromole per kilogram seawater (CO2calc output)</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>micromolePerKilogram</customUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>no data, value not measured</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>CO3</attributeName>
+          <attributeLabel>CO3 lab, CO2calc output (micromole/kgSW)</attributeLabel>
+          <attributeDefinition>Concentration of carbonate ion, micromole per kilogram seawater (CO2calc output)</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>micromolePerKilogram</customUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>no data, value not measured</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>DIC</attributeName>
+          <attributeLabel>TCO2 (DIC) lab, CO2calc output (micromole/kgSW)</attributeLabel>
+          <attributeDefinition>Total dissolved CO2, carbonate and bicarbonate (calculated). Also called dissolved inorganic carbon. micromol per kilogram seawater (CO2calc output)</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>micromolePerKilogram</customUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>no data, value not measured</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>OmegaAragonite</attributeName>
+          <attributeLabel>Omega aragonite lab, CO2calc output </attributeLabel>
+          <attributeDefinition>Omega aragonite, aragonite saturation state</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>no data, value not measured</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>OmegaCalcite</attributeName>
+          <attributeLabel>Omega calcite lab, CO2calc output </attributeLabel>
+          <attributeDefinition>Omega calcite, calcite saturation state</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>no data, value not measured</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>temp_insitu</attributeName>
+          <attributeLabel>temperature (C) adj, CO2calc input</attributeLabel>
+          <attributeDefinition>Temperature of the seawater when the sample was collected (in situ); degrees Celsius (CO2calc input)</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>celsius</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>no data, value not measured</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>pH_adjusted</attributeName>
+          <attributeLabel>pH adj, CO2calc output</attributeLabel>
+          <attributeDefinition>pH, calculated for in situ salinity and temperature; total scale (CO2calc output)</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>no data, value not measured</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>CO2_adjusted</attributeName>
+          <attributeLabel>CO2 adj, CO2calc output (micromole/kgSW)</attributeLabel>
+          <attributeDefinition>Concentraiton of CO2, in situ conditions; micromole per kilogram seawater (CO2calc output)</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>micromolePerKilogram</customUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>no data, value not measured</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>fCO2_adjusted</attributeName>
+          <attributeLabel>fCO2 adj, CO2calc output (microatm)</attributeLabel>
+          <attributeDefinition>Fugacity of CO2, in situ conditions; microatmospheres (CO2calc output)</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>microatmosphere</customUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>no data, value not measured</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>pCO2_adjusted</attributeName>
+          <attributeLabel>pCO2 adj, CO2calc output (microatm)</attributeLabel>
+          <attributeDefinition>Partial pressure of CO2, in situ conditions; microatmospheres (CO2calc output)</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>microatmosphere</customUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>no data, value not measured</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>HCO3_adjusted</attributeName>
+          <attributeLabel>HCO3 adj, CO2calc output (micromole/kgSW)</attributeLabel>
+          <attributeDefinition>Concentration of bicarbonate ion, in situ conditions; micromole per kilogram seawater (CO2calc output)</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>micromolePerKilogram</customUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>no data, value not measured</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>CO3_adjusted</attributeName>
+          <attributeLabel>CO3 adj, CO2calc output (micromole/kgSW)</attributeLabel>
+          <attributeDefinition>Concentration of carbonate ion, in situ conditions; micromole per kilogram seawater (CO2calc output)</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>micromolePerKilogram</customUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>no data, value not measured</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>DIC_adjusted</attributeName>
+          <attributeLabel>TCO2 (DIC),  CO2calc output(micromole/kgSW)</attributeLabel>
+          <attributeDefinition>Total dissolved CO2, carbonate and bicarbonate, in situ conditions; Also called dissolved inorganic carbon. micromole per kilogram seawater (CO2calc output)</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>micromolePerKilogram</customUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>no data, value not measured</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>OmegaAragonite_adjusted</attributeName>
+          <attributeLabel>Omega aragonite adj, CO2calc output </attributeLabel>
+          <attributeDefinition>Omega aragonite, in situ conditions; aragonite saturation state</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>no data, value not measured</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>OmegaCalcite_adjusted</attributeName>
+          <attributeLabel>Omega calcite adj, CO2calc output </attributeLabel>
+          <attributeDefinition>Omega calcite, in situ conditions; calcite saturation state</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <precision>0.01</precision>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>-9999</code>
+            <codeExplanation>no data, value not measured</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>k1k2</attributeName>
+          <attributeLabel>source of CO2 constants</attributeLabel>
+          <attributeDefinition>source dissociation constants for Carbonic acid  (K1 and K2)</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>kf</attributeName>
+          <attributeLabel>dissociation constant for HF</attributeLabel>
+          <attributeDefinition>source of dissociation constant for HF using method from Dickson and Riley (1979 in Dickson and Goyet, 1994).</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>any text</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>ks</attributeName>
+          <attributeLabel>source of KHSO4 constant</attributeLabel>
+          <attributeDefinition>source of dissociation constant for potassium sulfate (KHSO4)</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>Dickson</code>
+                    <definition>Dickson (1990b)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Khoo</code>
+                    <definition>Khoo et al. (1977)</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>pHscale</attributeName>
+          <attributeLabel>pH scale (user-selected)</attributeLabel>
+          <attributeDefinition>User-selected scale for pH units </attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>Free scale (mol/kgSW)</code>
+                    <definition>Free scale (mol/kgSW)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>NBS scale (mol/kgSW)</code>
+                    <definition>NBS scale (mol/kgSW)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Seawater scale (mol/kgSW)</code>
+                    <definition>Seawater scale (mol/kgSW)</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>Total scale (mol/kgSW)</code>
+                    <definition>Total scale (mol/kgSW)</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>670</numberOfRecords>
+    </dataTable>
+  </dataset>
+  <additionalMetadata>
+    <metadata>
+      <unitList>
+        <unit abbreviation="C" constantToSI="273.18" id="celsius"
+          multiplierToSI="1" name="celsius" parentSI="kelvin">
+          <description>SI-derived unit of temperature</description>
+        </unit>
+        <unit abbreviation="dbar" id="decibar" multiplierToSI="10000"
+          name="decibar" parentSI="pascal" unitType="pressure">
+          <description>decibar = 0.1 bar</description>
+        </unit>
+        <unit abbreviation="°" id="degree" multiplierToSI="0.0174532924"
+          name="degree" parentSI="radian" unitType="angle">
+          <description>360 degrees comprise a unit circle.</description>
+        </unit>
+        <unit id="dimensionless" name="dimensionless" unitType="dimensionless">
+          <description>a designation asserting the absence of an associated unit</description>
+        </unit>
+        <unit abbreviation="microatm" constantToSI="0"
+          id="microatmosphere" multiplierToSI="0.101325"
+          name="microatmosphere" parentSI="pascal" unitType="pressure">
+          <description>1 microAtmosphere = 0.000001 atmospheres = 1013.25 millibars = 0.101325 Pascals = 0.0000147 lb/sq.in</description>
+        </unit>
+        <unit constantToSI="0" id="micromolePerKilogram"
+          name="micromolePerKilogram" parentSI="molePerKilogram">
+          <description>a concentration unit used in oceanography. volume changes with depth, but mass does not. Not sure what the unitType should be.</description>
+        </unit>
+        <unit abbreviation="ppt" id="partsPerThousand"
+          multiplierToSI="1" name="partsPerThousand" unitType="dimensionless">
+          <description>ratio of two quantities as parts per thousand (1:1000)</description>
+        </unit>
+      </unitList>
+    </metadata>
+  </additionalMetadata>
+</eml:eml>
